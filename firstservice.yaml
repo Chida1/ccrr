@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+ name: chidatestservice
+spec:
+ ports:
+ - port: 80
+   targetPort: siteport
+   protocol: TCP
+  selector:
+   app: firstapp
+   type: NodePort
