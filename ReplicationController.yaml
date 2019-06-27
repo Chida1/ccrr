@@ -13,7 +13,7 @@ spec:
     spec:
      containers:
      - name: firstapp
-     image: tomcat
-     ports:
-     - name: siteport
-       containerPort: 8080
+       image: tomcat
+       ports:
+       - name: siteport
+         containerPort: 8080
