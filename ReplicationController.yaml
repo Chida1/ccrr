@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: ReplicationController
+metadata:
+  name: chida-test-Controller
+spec:
+  replicas: 2
+  selector:
+    app: firstapp
+  template:
+    metadata:
+      labels:
+        app: firstapp
+    spec:
+     containers:
+     - name: firstapp
+     image: tomcat
+     ports:
+     - name: siteport
+       containerPort: 3000
